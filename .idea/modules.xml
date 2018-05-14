@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file:///media/usrc/external/UnMannedDrone/DroneController/DroneController.iml" filepath="/media/usrc/external/UnMannedDrone/DroneController/DroneController.iml" />
+      <module fileurl="file:///media/hasan/external/UnMannedDrone/DroneController/DroneController.iml" filepath="/media/hasan/external/UnMannedDrone/DroneController/DroneController.iml" />
+      <module fileurl="file:///media/usrc/external/UnMannedDrone/DroneController/app/app.iml" filepath="/media/usrc/external/UnMannedDrone/DroneController/app/app.iml" />
+      <module fileurl="file:///media/hasan/external/UnMannedDrone/DroneController/app/app.iml" filepath="/media/hasan/external/UnMannedDrone/DroneController/app/app.iml" />
+      <module fileurl="file:///media/usrc/external/UnMannedDrone/DroneController/bugstick/bugstick.iml" filepath="/media/usrc/external/UnMannedDrone/DroneController/bugstick/bugstick.iml" />
+      <module fileurl="file:///media/hasan/external/UnMannedDrone/DroneController/bugstick/bugstick.iml" filepath="/media/hasan/external/UnMannedDrone/DroneController/bugstick/bugstick.iml" />
+      <module fileurl="file:///media/usrc/external/UnMannedDrone/DroneController/cam_viewer/cam_viewer.iml" filepath="/media/usrc/external/UnMannedDrone/DroneController/cam_viewer/cam_viewer.iml" />
+      <module fileurl="file:///media/hasan/external/UnMannedDrone/DroneController/cam_viewer/cam_viewer.iml" filepath="/media/hasan/external/UnMannedDrone/DroneController/cam_viewer/cam_viewer.iml" />
+      <module fileurl="file:///media/usrc/external/UnMannedDrone/DroneController/keyboardvisibilityevent/keyboardvisibilityevent.iml" filepath="/media/usrc/external/UnMannedDrone/DroneController/keyboardvisibilityevent/keyboardvisibilityevent.iml" />
+      <module fileurl="file:///media/hasan/external/UnMannedDrone/DroneController/keyboardvisibilityevent/keyboardvisibilityevent.iml" filepath="/media/hasan/external/UnMannedDrone/DroneController/keyboardvisibilityevent/keyboardvisibilityevent.iml" />
+      <module fileurl="file:///media/usrc/external/UnMannedDrone/DroneController/rmswitch/rmswitch.iml" filepath="/media/usrc/external/UnMannedDrone/DroneController/rmswitch/rmswitch.iml" />
+      <module fileurl="file:///media/hasan/external/UnMannedDrone/DroneController/rmswitch/rmswitch.iml" filepath="/media/hasan/external/UnMannedDrone/DroneController/rmswitch/rmswitch.iml" />
+    </modules>
+  </component>
+</project>

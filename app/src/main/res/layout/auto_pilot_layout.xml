@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auto_pilot_layout"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout android:id="@+id/auto_pilot_row_one"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:visibility="visible"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:rmswitch="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:id="@+id/altitude_label"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/image_altitude_range"/>
+
+        <EditText
+            android:id="@+id/edit_altitude_from"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/altitude_edit_back"
+            android:gravity="center"
+            android:inputType="number"
+            android:cursorVisible="false"
+            android:maxLength="10"
+            android:textSize="10dp"/>
+
+        <ImageView
+            android:id="@+id/altitude_wave"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/edit_altitude_from"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/image_wave"/>
+
+        <EditText
+            android:id="@+id/edit_altitude_to"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/altitude_wave"
+            android:background="@drawable/altitude_edit_back"
+            android:gravity="center"
+            android:inputType="number"
+            android:cursorVisible="false"
+            android:maxLength="10"
+            android:textSize="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/auto_pilot_row_two"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:visibility="visible"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:rmswitch="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:id="@+id/measure_label"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/image_measure"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/measure_switch_layout"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:visibility="visible">
+
+            <com.rm.rmswitch.RMSwitch
+                rmswitch:switchBkgNotCheckedColor="@color/white"
+                rmswitch:switchBkgCheckedColor="@color/green"
+                rmswitch:switchToggleNotCheckedColor="#CCCCCC"
+                rmswitch:switchToggleCheckedColor="#CCCCCC"
+                rmswitch:forceAspectRatio="true"
+                rmswitch:switchDesign="large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout android:id="@+id/auto_pilot_row_three"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:visibility="visible"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:rmswitch="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:id="@+id/time_disp_label"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/image_measure"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/time_disp_switch_layout"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:visibility="visible">
+
+            <com.rm.rmswitch.RMSwitch
+                rmswitch:switchBkgNotCheckedColor="@color/white"
+                rmswitch:switchBkgCheckedColor="@color/green"
+                rmswitch:switchToggleNotCheckedColor="#CCCCCC"
+                rmswitch:switchToggleCheckedColor="#CCCCCC"
+                rmswitch:forceAspectRatio="true"
+                rmswitch:switchDesign="large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

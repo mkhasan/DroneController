@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/cam_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.railbot.usrc.mediaplayer.VideoSurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/background_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/map_pic_cam_btn"
+        android:layout_width="@dimen/map_btn_map_pic_width"
+        android:layout_height="@dimen/map_btn_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/map_pic"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/reduction_cam_btn"
+        android:layout_width="@dimen/map_btn_width"
+        android:layout_height="@dimen/map_btn_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/reduction"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/search_cam_btn"
+        android:layout_width="@dimen/map_btn_width"
+        android:layout_height="@dimen/map_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/search"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/home_cam_btn"
+        android:layout_width="@dimen/map_btn_width"
+        android:layout_height="@dimen/map_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/return_home"
+        android:visibility="gone"/>
+
+</RelativeLayout>
