@@ -734,7 +734,7 @@ public class MainActivity extends AppCompatActivity
                 }
 
                 try {
-                    sleep(1000);
+                    sleep(500);     // change this value to change frequency 
                 }
 
                 catch (Exception e) {
