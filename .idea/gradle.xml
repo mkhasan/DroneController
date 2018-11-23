@@ -7,12 +7,12 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="/media/usrc/external/UnMannedDrone/DroneController" />
-            <option value="/media/usrc/external/UnMannedDrone/DroneController/app" />
-            <option value="/media/usrc/external/UnMannedDrone/DroneController/bugstick" />
-            <option value="/media/usrc/external/UnMannedDrone/DroneController/cam_viewer" />
-            <option value="/media/usrc/external/UnMannedDrone/DroneController/keyboardvisibilityevent" />
-            <option value="/media/usrc/external/UnMannedDrone/DroneController/rmswitch" />
+            <option value="/media/hasan/external/UnMannedDrone/DroneController" />
+            <option value="/media/hasan/external/UnMannedDrone/DroneController/app" />
+            <option value="/media/hasan/external/UnMannedDrone/DroneController/bugstick" />
+            <option value="/media/hasan/external/UnMannedDrone/DroneController/cam_viewer" />
+            <option value="/media/hasan/external/UnMannedDrone/DroneController/keyboardvisibilityevent" />
+            <option value="/media/hasan/external/UnMannedDrone/DroneController/rmswitch" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

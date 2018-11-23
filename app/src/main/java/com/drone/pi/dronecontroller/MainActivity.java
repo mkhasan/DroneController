@@ -3384,7 +3384,7 @@ public class MainActivity extends AppCompatActivity
 
 
         cameraLink = getString(R.string.default_camera_link);
-        serverAddr = "168.188.40.39";//"168.188.56.50";//"58.224.86.126";
+        serverAddr = "168.188.40.28";//"58.224.86.126";
         mqttPort = "1883";
         /*
         cameraLink = getIntent().getStringExtra(InfoActivity.CAM_ADDR);
