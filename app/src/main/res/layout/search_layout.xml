@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/search_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/search_top">
+        <ImageButton
+            android:id="@+id/search_exit"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_exit"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"/>
+
+
+
+        <ImageButton
+            android:id="@+id/search_icon"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_icon"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/search_text_layout"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/icon_bar_search">
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#acffffff"
+                android:textColorHint="#acffffff"
+                android:hint="Search.."
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:imeOptions="actionSearch"
+                android:inputType="text"/>
+
+            <ImageButton
+                android:id="@+id/search_cross"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_x"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_height="200dp"
+        android:dividerHeight="@dimen/search_list_div_height" />
+
+
+
+</RelativeLayout>

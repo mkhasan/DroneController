@@ -1,0 +1,86 @@
+<RelativeLayout android:id="@+id/general_row_two"
+    android:layout_width="400dp"
+    android:layout_height="20dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="50dp"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rmswitch="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:id="@+id/battery_display_label"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/image_battery_display"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/batt_disp_switch_layout"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:visibility="visible">
+
+        <com.rm.rmswitch.RMSwitch
+            rmswitch:switchBkgNotCheckedColor="@color/white"
+            rmswitch:switchBkgCheckedColor="@color/green"
+            rmswitch:switchToggleNotCheckedColor="#CCCCCC"
+            rmswitch:switchToggleCheckedColor="#CCCCCC"
+            rmswitch:forceAspectRatio="true"
+            rmswitch:switchDesign="large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/gauge_bar_label"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:visibility="visible"
+        android:background="@drawable/image_gauge_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/gauge_bar_switch_layout"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:visibility="visible">
+
+        <com.rm.rmswitch.RMSwitch
+            rmswitch:switchBkgNotCheckedColor="@color/white"
+            rmswitch:switchBkgCheckedColor="@color/green"
+            rmswitch:switchToggleNotCheckedColor="#CCCCCC"
+            rmswitch:switchToggleCheckedColor="#CCCCCC"
+            rmswitch:forceAspectRatio="true"
+            rmswitch:switchDesign="large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="3dp"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

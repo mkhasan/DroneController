@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    xmlns:bugstick="http://schemas.android.com/apk/res-auto"
+    tools:context="com.drone.pi.dronecontroller.MainActivity">
+
+
+    <include
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/cam_layout" />
+
+        <include
+            layout="@layout/map_layout" />
+
+        <include
+            layout="@layout/top_menu" />
+
+        <ImageButton
+            android:id="@+id/robot_control"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/camera_click_top_margin"
+            android:layout_marginLeft="@dimen/camera_click_right_margin"
+            android:background="@drawable/icon_sting" />
+
+        <ImageButton
+            android:id="@+id/camera_click"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/camera_click_top_margin"
+            android:layout_marginRight="@dimen/camera_click_right_margin"
+            android:background="@drawable/icon_camera_button" />
+
+
+        <ImageButton
+            android:id="@+id/stop_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stop"
+            android:visibility="gone"/>
+
+        <com.jmedeisis.bugstick.Joystick
+            android:id="@+id/joystick"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@drawable/l_stick_back"
+            bugstick:force_square="true"
+            bugstick:motion_constraint="None"
+            bugstick:start_on_first_touch="true">
+
+            <Button
+                android:id="@+id/joystick_button"
+                android:layout_width="@dimen/stick_size"
+                android:layout_height="@dimen/stick_size"
+                android:background="@drawable/stick_button"
+                android:alpha="@integer/joystick_alpha"/>
+
+        </com.jmedeisis.bugstick.Joystick>
+
+        <ImageView
+            android:id="@+id/package_display"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:visibility="gone"
+            android:background="@drawable/joystick_box_faded" />
+
+
+
+        <com.drone.pi.dronecontroller.YawController
+            android:id="@+id/yaw_controller"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@drawable/right_stick_back"
+            android:visibility="gone"
+            bugstick:force_square="true"
+            bugstick:motion_constraint="None"
+            bugstick:start_on_first_touch="true">
+
+
+            <Button
+                android:id="@+id/yaw_btn"
+                android:layout_width="@dimen/stick_size"
+                android:layout_height="@dimen/stick_size"
+                android:background="@drawable/stick_button"
+                android:alpha="@integer/joystick_alpha"/>
+
+            <ImageView
+                android:id="@+id/yaw_bar"
+                android:layout_width="15dp"
+                android:layout_height="80dp"
+                android:src="@drawable/right_stick_bar"
+                android:scaleType="center"/>
+
+
+
+        </com.drone.pi.dronecontroller.YawController>
+
+
+
+        <ImageView
+            android:id="@+id/arm_dialer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:visibility="gone"
+            android:background="@drawable/arm_dialer_background"
+            android:scaleType="matrix"/>
+
+        <ImageView
+            android:id="@+id/landing_controller"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:visibility="gone"
+            android:background="@drawable/landing_controller_background"
+            android:scaleType="matrix"/>
+
+        <ImageView
+            android:id="@+id/gimbal_controller"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:visibility="visible"
+            android:background="@drawable/gimbal_background"
+            android:scaleType="matrix" />
+
+        <RelativeLayout
+            android:id="@+id/gimbal_ogl"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@drawable/gimbal_background"
+            android:visibility="visible">
+            <com.drone.pi.dronecontroller.GLSurface.ShapeGLSurfaceView
+                android:id="@+id/gl_surface_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+        <include
+            layout="@layout/connection_progress" />
+
+        <include
+            layout="@layout/setup" />
+
+        <com.drone.pi.dronecontroller.Circle
+            android:id="@+id/ani_cancel_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/image_arm"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/cancel_status"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/text_cancel"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

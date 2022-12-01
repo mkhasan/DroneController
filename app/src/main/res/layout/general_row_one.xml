@@ -1,0 +1,71 @@
+<RelativeLayout android:id="@+id/general_row_one"
+    android:layout_width="300dp"
+    android:layout_height="20dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="50dp"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rmswitch="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/language_label"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible"
+        android:background="@drawable/image_language"/>
+
+    <ImageButton
+        android:id="@+id/language_btn"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/language_select"
+        android:src="@drawable/text_select"
+        android:scaleType="center"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/unit_label"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/image_unit"
+        android:visibility="visible"/>
+
+
+    <RelativeLayout
+        android:id="@+id/unit_switch_layout"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:visibility="visible">
+
+        <com.rm.rmswitch.RMSwitch
+            android:id="@+id/unit_switch"
+            rmswitch:switchBkgNotCheckedColor="@color/white"
+            rmswitch:switchBkgCheckedColor="@color/green"
+            rmswitch:switchToggleNotCheckedColor="#CCCCCC"
+            rmswitch:switchToggleCheckedColor="#CCCCCC"
+            rmswitch:forceAspectRatio="true"
+            rmswitch:switchDesign="large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="3dp"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

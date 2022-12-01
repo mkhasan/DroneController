@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/setup"
+    android:layout_width="@dimen/setup_width"
+    android:layout_height="@dimen/setup_height"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/all_background"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/setup_cancel_btn"
+        android:layout_width="@dimen/setup_cancel_width"
+        android:layout_height="@dimen/setup_cancel_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/setup_cancel"/>
+
+    <LinearLayout
+        android:id="@+id/setup_menu"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/setup_menu_top_margin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@drawable/pair_line"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageButton
+            android:id="@+id/setup_general_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/setup_icon_margin"
+            android:background="@drawable/top_background_gray"
+            android:src="@drawable/general_no_touched"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/setup_comm_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/setup_icon_margin"
+            android:background="@drawable/top_background_gray"
+            android:src="@drawable/communication_no_touched"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/setup_camera_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/setup_icon_margin"
+            android:background="@drawable/top_background_gray"
+            android:src="@drawable/camera_no_touched"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/setup_auto_pilot_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/setup_icon_margin"
+            android:background="@drawable/top_background_gray"
+            android:src="@drawable/auto_no_touched"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/setup_emergency_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/setup_icon_margin"
+            android:background="@drawable/top_background_gray"
+            android:src="@drawable/emergency_no_touched"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/setup_exit_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/setup_icon_margin"
+            android:background="@drawable/top_background_gray"
+            android:src="@drawable/exit_no_touched"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/general_row_one" />
+
+    <include
+        layout="@layout/general_row_two" />
+
+    <include
+        layout="@layout/general_row_three" />
+
+    <include
+        layout="@layout/setup_communication" />
+
+    <include
+        layout="@layout/camera_row_one" />
+
+    <include
+        layout="@layout/camera_row_two" />
+
+    <include
+        layout="@layout/auto_pilot_layout" />
+
+    <include
+        layout="@layout/emergency_layout" />
+
+    <RelativeLayout
+        android:id="@+id/setup_exit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/setup_exit_msg"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:visibility="visible"
+            android:background="@drawable/text_exit_sentence" />
+        <LinearLayout
+            android:id="@+id/exit_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible">
+            <ImageButton
+                android:id="@+id/setup_exit_yes"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/image_yes" />
+            <ImageButton
+                android:id="@+id/setup_exit_no"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/image_no" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

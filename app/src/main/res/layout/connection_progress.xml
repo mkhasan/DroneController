@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/connection_progress"
+    android:layout_width="@dimen/connection_progress_width"
+    android:layout_height="@dimen/connection_progress_height"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/connection_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/connection_message_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/connection_message_top_margin"
+        android:layout_marginLeft="@dimen/connection_message_side_margin"
+
+        android:layout_marginRight="@dimen/connection_message_side_margin"
+        android:background="@drawable/connecting_top_success"/>
+
+    <ImageView
+        android:id="@+id/percentage"
+        android:layout_width="@dimen/connection_percentage_width"
+        android:layout_height="@dimen/connection_percentage_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/text_55percent"/>
+
+
+    <ImageButton
+        android:id="@+id/cancel_or_try"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/connection_cancel_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/connection_message_top_margin"
+        android:layout_marginLeft="@dimen/connection_cancel_side_margin"
+        android:layout_marginRight="@dimen/connection_cancel_side_margin"
+        android:background="@drawable/connection_bottom_success"/>
+
+
+
+</RelativeLayout>
